@@ -7,7 +7,7 @@ PWD='pwd'
 
 cd openssl-1.1.1c
 
-./config shared no-ssl2 no-ssl3 no-comp no-hw no-engine --openssldir=$PWD/../mac/openssl --prefix=$PWD/../mac/openssl
+./Configure darwin64-x86_64-cc --openssldir=$PWD/../mac/openssl --prefix=$PWD/../mac/openssl
 
 make clean
 make depend
